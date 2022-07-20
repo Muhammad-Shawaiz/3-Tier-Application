@@ -2,8 +2,6 @@
 
 ## Steps which are common in all scenarios
 
-## Common Steps
-
 ### Note: We assume that you have docker installed in your machine.
 
 ### Step 1
@@ -103,7 +101,7 @@
 
 `cd Backend`
 
-####Run the Backend DockerFile.
+#### Run the Backend DockerFile.
 
 `docker build . -t back`
 
@@ -111,6 +109,7 @@
 #### After Building the Image ,Run containers.
 
 `docker run -d -p 3000:80 --name=frontend front`
+
 `docker run -d -p 4000:4000 --name=backend back`
 
 #### Now your stack is up.

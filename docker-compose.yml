@@ -1,0 +1,16 @@
+
+version: '3'
+services: 
+  frontend:
+    build: ./Frontend
+    ports:
+      - "3000:80"
+  backend:
+    build: ./Backend
+    ports:
+      - "4000:4000"
+
+  db:
+    image: 'mongo:latest'        
+    ports:
+      - "27017:27017"

@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("frontend")
+                    docker.build("react-app", "-f Frontend/Dockerfile Frontend")
                     
                 }
             }

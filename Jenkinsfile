@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     docker.build("react-app", "-f Frontend/Dockerfile Frontend")
-                    docker.build("back", "-f Backend/Dockerfile Backend")
+                    docker.build("node", "-f Backend/Dockerfile Backend")
                     sh 'docker pull mongo'
                     
                 }
